@@ -2,6 +2,7 @@ name: Ping urls
 
 on:
   workflow_dispatch:
+  push:
   schedule:
     - cron: '*/5 * * * *'
 
