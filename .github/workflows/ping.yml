@@ -26,4 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Ping urls
+        env:
+            URLS: ${{ secrets.URLS }}
         run: python pinger.py
